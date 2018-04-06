@@ -38,5 +38,18 @@
 			return $error;
 		}
 		mysqli_close($link);
+    }
+    
+	function reviewResults($id){
+		include('connect.php');
+		$revQuery = "SELECT * FROM tbl_movies, tbl_reviews, tbl_movies_reviews WHERE tbl_movies.movie_id = tbl_movies_reviews.movie_id AND tbl_reviews.review_id = tbl_movies_reviews.review_id AND tbl_movies_reviews.movie_id='{$id}'";
+		$runQuery = mysqli_query($link, $revQuery);
+		if($runQuery){
+			return $runQuery;
+		}else{
+			$error = "There was a problem accessing this information.  Sorry about your luck ;)";
+			return $error;
+		}
+		mysqli_close($link);
 	}
 ?>
