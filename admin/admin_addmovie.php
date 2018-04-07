@@ -18,6 +18,9 @@
 <head>
 <meta charset="UTF-8">
 <title>Add Movie</title>
+<link rel="stylesheet" href="../css/reset.css">
+<link rel="stylesheet" href="../css/admin.css">
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700|Merriweather:300,400,700" rel="stylesheet">
 </head>
 <body>
 	<?php if(!empty($message)){ echo $message;} ?>
@@ -45,6 +48,6 @@
 		<br><br>
 		<input type="submit" name="submit" value="Add Movie">
 	</form>
-
+	<a href="admin_index.php">Back</a>
 </body>
 </html>

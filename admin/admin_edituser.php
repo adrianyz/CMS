@@ -23,6 +23,9 @@
 <head>
 <meta charset="UTF-8">
 <title>Edit User</title>
+<link rel="stylesheet" href="../css/reset.css">
+<link rel="stylesheet" href="../css/admin.css">
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700|Merriweather:300,400,700" rel="stylesheet">
 </head>
 <body>
 	<h2>Edit User</h2>
@@ -38,5 +41,6 @@
 		<input type="text" name="email" value="<?php echo $info['user_email'];  ?>"><br><br>
 		<input type="submit" name="submit" value="Edit Account">
 	</form>
+	<a href="admin_index.php">Back</a>
 </body>
 </html>

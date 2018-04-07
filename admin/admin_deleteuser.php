@@ -9,6 +9,9 @@
 <head>
 <meta charset="UTF-8">
 <title>Delete User</title>
+<link rel="stylesheet" href="../css/reset.css">
+<link rel="stylesheet" href="../css/admin.css">
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700|Merriweather:300,400,700" rel="stylesheet">
 </head>
 <body>
 	<h2>Time to destroy some lives...</h2>
@@ -17,6 +20,6 @@
 			echo "{$row['user_fname']} <a href=\"phpscripts/caller.php?caller_id=delete&id={$row['user_id']}\">Fired</a><br>";
 		}
 	?>
-	<a href="admin_index.php">Maybe not today</a>
+	<a href="admin_index.php">Back</a>
 </body>
 </html>
