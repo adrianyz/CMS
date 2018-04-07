@@ -11,7 +11,7 @@ body{
     height:100vh;
     display:grid;
     grid-template-columns: 100px repeat(10, 1fr) 100px;
-    grid-template-rows: 150px auto 80px;
+    grid-template-rows: 180px auto 100px;
     background-color: $primcolor;
 }
 
@@ -119,17 +119,40 @@ body{
     }
 }
 
-footer{
+.ftWrapper{
     grid-column: 2/12;
     grid-row: 3/4;
+    width:600px;
+    margin:0 auto;
+    
+        h2{
+            color:$seccolor;
+            font-family: $secfont;
+            font-size:1em;
+            line-height: 3em;
+            text-align: center;
+            margin-top:20px;
+            width:400px;
+            display: inline-block;
+        }
 
-    h2{
-        color:$seccolor;
-        font-family: $secfont;
-        font-size:1em;
-        line-height: 3em;
-        text-align: center;
-    }
+        a{
+            text-decoration: none;
+            font-family: $secfont;
+            font-weight:300;
+            font-size:1em;
+            color:$thirdcolor;
+            transition: all .3s ease-in-out;
+            line-height: 1.5em;
+            display:inline;
+            cursor: pointer;
+            border: none;
+            padding:5px;
+            &:hover{
+                border: 1px solid $thirdcolor;
+            }
+        } 
+     
 }
 
 // detail page

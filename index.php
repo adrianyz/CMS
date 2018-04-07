@@ -38,8 +38,14 @@
 	}else{
 		echo "<p class=\"error\">{$getMovies}</p>";
 	}
-	echo "</div>";
-	include('includes/footer.html');
+	echo "</div> 
+	<div class=\"ftWrapper\">
+		
+			<h2>Contact: admin@yourmoviereviewsite.com</h2>
+			<a href=\"admin/admin_login.php\">Admin Login</a>
+		
+	</div>
+	";
 ?>
 </body>
 </html>
