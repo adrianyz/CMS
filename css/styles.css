@@ -31,7 +31,8 @@ body {
         color: black;
         -webkit-transition: all .3s ease-in-out;
         -o-transition: all .3s ease-in-out;
-        transition: all .3s ease-in-out; }
+        transition: all .3s ease-in-out;
+        cursor: pointer; }
         .headerNav ul li a:hover {
           color: orangered; }
 
@@ -44,11 +45,12 @@ body {
 
 .singleMovie {
   width: 350px;
-  margin-bottom: 20px; }
+  margin-bottom: 30px; }
   .singleMovie .imgWrapper {
     width: 350px;
     height: 480px;
-    overflow: hidden; }
+    overflow: hidden;
+    border: 2px solid orangered; }
   .singleMovie img {
     width: 100%;
     -webkit-transition: all .4s ease-in-out;
@@ -91,7 +93,8 @@ body {
     -webkit-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
-    line-height: 1.5em; }
+    line-height: 1.5em;
+    cursor: pointer; }
     .singleMovie a:hover {
       color: orangered; }
 
@@ -104,3 +107,170 @@ footer {
     font-size: 1em;
     line-height: 3em;
     text-align: center; }
+
+.infoWrapper {
+  grid-column: 3/7;
+  grid-row: 2/3;
+  margin-top: -100px;
+  display: grid;
+  grid-template-columns: 3fr 2fr; }
+  .infoWrapper h2 {
+    grid-column: 1/3;
+    font-family: "Lato", sans-serif;
+    font-size: 2.5em;
+    font-weight: 700; }
+  .infoWrapper .detailImgWrapper {
+    grid-column: 1/2;
+    width: 360px;
+    height: 500px;
+    overflow: hidden;
+    border: 2px solid orangered; }
+    .infoWrapper .detailImgWrapper img {
+      width: 100%; }
+  .infoWrapper .detailContent {
+    grid-column: 2/3;
+    padding-top: 30px; }
+    .infoWrapper .detailContent p {
+      font-family: "Merriweather", serif;
+      font-weight: 300;
+      font-size: 1em;
+      margin-left: 30px;
+      margin-bottom: 40px;
+      line-height: 1.5em; }
+  .infoWrapper .detailDesc {
+    grid-column: 1/3; }
+    .infoWrapper .detailDesc p {
+      font-family: "Merriweather", serif;
+      font-weight: 300;
+      font-size: 1em;
+      line-height: 1.5em; }
+  .infoWrapper .backBtn {
+    grid-column: 1/2;
+    margin-bottom: -20px; }
+    .infoWrapper .backBtn a {
+      text-decoration: none;
+      font-family: "Lato", sans-serif;
+      font-weight: 300;
+      font-size: 1em;
+      margin: 0;
+      padding: 5px 20px;
+      color: black;
+      -webkit-transition: all .3s ease-in-out;
+      -o-transition: all .3s ease-in-out;
+      transition: all .3s ease-in-out;
+      cursor: pointer;
+      border: 2px solid black; }
+      .infoWrapper .backBtn a:hover {
+        color: orangered;
+        border: 2px solid orangered; }
+
+.reviewWrapper {
+  grid-column: 7/11;
+  grid-row: 2/3;
+  margin-top: -40px;
+  display: grid;
+  grid-template-rows: 40% 60%; }
+
+.reviewForm {
+  grid-row: 1/2;
+  display: grid; }
+  .reviewForm h2 {
+    font-family: "Lato", sans-serif;
+    font-size: 2em;
+    line-height: 1.5em;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: black;
+    color: white; }
+  .reviewForm label {
+    font-family: "Lato", sans-serif;
+    font-size: 1em;
+    display: block;
+    line-height: 2em;
+    text-align: center;
+    margin-right: 20px; }
+  .reviewForm input {
+    border: 2px solid orangered;
+    line-height: 1.7em;
+    width: 200px;
+    display: block;
+    margin-right: 50px; }
+  .reviewForm select, .reviewForm option {
+    background: transparent;
+    border: 2px solid orangered;
+    font-size: 14px;
+    padding: 5px;
+    /* If you add too much padding here, the options won't show in IE */
+    width: 200px;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0; }
+  .reviewForm .textBox label {
+    text-align: left;
+    line-height: 1em; }
+  .reviewForm textarea {
+    resize: none;
+    overflow: scroll;
+    height: 80px;
+    width: 98.5%;
+    border: 2px solid orangered;
+    display: inline-block; }
+  .reviewForm .nameInput {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row; }
+  .reviewForm button {
+    text-decoration: none;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 1em;
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px 20px;
+    color: black;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    cursor: pointer;
+    border: 2px solid black; }
+    .reviewForm button:hover {
+      color: orangered;
+      border: 2px solid orangered; }
+
+.reviews {
+  grid-row: 2/3;
+  display: grid;
+  grid-template-rows: 120px auto; }
+  .reviews h2 {
+    grid-row: 1/2;
+    font-family: "Lato", sans-serif;
+    font-size: 2em;
+    line-height: 1.5em;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    text-align: center;
+    background-color: black;
+    color: white; }
+  .reviews .preReview {
+    height: 100%;
+    overflow: scroll; }
+  .reviews .singleReview {
+    border: 2px solid orangered;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-family: "Merriweather", serif;
+    line-height: 1.2em;
+    font-size: 0.8em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row; }
+    .reviews .singleReview h3, .reviews .singleReview h4 {
+      margin-right: 20px; }
