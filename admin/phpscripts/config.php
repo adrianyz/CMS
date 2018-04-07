@@ -3,5 +3,8 @@
     require_once('read.php');
     require_once('login.php');
     require_once('sessions.php');
+    require_once('users.php');
     require_once('addReview.php');
+    require_once('addmovie.php');
+    require_once('single_edit_form.php');
 ?>

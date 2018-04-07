@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Apr 05, 2018 at 05:38 AM
+-- Generation Time: Apr 08, 2018 at 12:03 AM
 -- Server version: 5.6.35
 -- PHP Version: 7.1.8
 
@@ -13,6 +13,25 @@ SET time_zone = "+00:00";
 --
 -- Database: `getMovies`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_attempts`
+--
+
+CREATE TABLE `tbl_attempts` (
+  `att_id` int(11) NOT NULL,
+  `att_ip` varchar(20) NOT NULL,
+  `att_time` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `tbl_attempts`
+--
+
+INSERT INTO `tbl_attempts` (`att_id`, `att_ip`, `att_time`) VALUES
+(1, '::1', 1);
 
 -- --------------------------------------------------------
 
@@ -36,7 +55,7 @@ CREATE TABLE `tbl_movies` (
 --
 
 INSERT INTO `tbl_movies` (`movie_id`, `movie_cover`, `movie_title`, `movie_trailer`, `movie_genre`, `movie_rating`, `movie_desc`, `movie_grades`) VALUES
-(1, 'images/1.jpg', 'Guardians of the Galaxy', 'videos/1.mp4', 'action', '8.7/10', 'Brash space adventurer Peter Quill (Chris Pratt) finds himself the quarry of relentless bounty hunters after he steals an orb coveted by Ronan, a powerful villain. To evade Ronan, Quill is forced into an uneasy truce with four disparate misfits: gun-toting Rocket Raccoon, treelike-humanoid Groot, enigmatic Gamora, and vengeance-driven Drax the Destroyer. But when he discovers the orb\'s true power and the cosmic threat it poses, Quill must rally his ragtag group to save the universe.', 'pnk'),
+(1, 'images/1.jpg', 'Guardians of the Galaxy', 'videos/1.mp4', 'action', '8.7/10', 'Brash space adventurer Peter Quill (Chris Pratt) finds himself the quarry of relentless bounty hunters after he steals an orb coveted by Ronan, a powerful villain. To evade Ronan, Quill is forced into an uneasy truce with four disparate misfits: gun-toting Rocket Raccoon, treelike-humanoid Groot, enigmatic Gamora, and vengeance-driven Drax the Destroyer. But when he discovers the orb&#039;s true power and the cosmic threat it poses, Quill must rally his ragtag group to save the universe.', 'ppp'),
 (2, 'images/2.jpg', 'Guardians of the Galaxy Vol. 2', 'videos/2.mp4', 'action', '8.2/10', 'Peter Quill and his fellow Guardians are hired by a powerful alien race, the Sovereign, to protect their precious batteries from invaders. When it is discovered that Rocket has stolen the items they were sent to guard, the Sovereign dispatch their armada to search for vengeance. As the Guardians try to escape, the mystery of Peter\'s parentage is revealed.', 'pnk'),
 (3, 'images/3.jpg', 'Thor: Ragnarok', 'videos/3.mp4', 'action', '8.5/10', 'Imprisoned on the other side of the universe, the mighty Thor finds himself in a deadly gladiatorial contest that pits him against the Hulk, his former ally and fellow Avenger. Thor\'s quest for survival leads him in a race against time to prevent the all-powerful Hela from destroying his home world and the Asgardian civilization.', 'pnk'),
 (4, 'images/4.jpg', 'War for the Planet of the Apes', 'videos/4.mp4', 'action', '8.4/10', 'Caesar (Andy Serkis) and his apes are forced into a deadly conflict with an army of humans led by a ruthless colonel (Woody Harrelson). After the apes suffer unimaginable losses, Caesar wrestles with his darker instincts and begins his own mythic quest to avenge his kind. As the journey finally brings them face to face, Caesar and the colonel are pitted against each other in an epic battle that will determine the fate of both of their species and the future of the planet.', 'p'),
@@ -49,7 +68,7 @@ INSERT INTO `tbl_movies` (`movie_id`, `movie_cover`, `movie_title`, `movie_trail
 (11, 'images/11.jpg', 'Paddington 2', 'videos/11.mp4', 'fantasy', '8.2/10', 'Settled in with the Brown family, Paddington the bear is a popular member of the community who spreads joy and marmalade wherever he goes. One fine day, he spots a pop-up book in an antique shop -- the perfect present for his beloved aunt\'s 100th birthday. When a thief steals the prized book, Paddington embarks on an epic quest to unmask the culprit before Aunt Lucy\'s big celebration.', 'pnk'),
 (12, 'images/12.jpg', 'Ferdinand', 'videos/12.mp4', 'fantasy', '6.7/10', 'Ferdinand is a young bull who escapes from a training camp in rural Spain after his father never returns from a showdown with a matador. Adopted by a girl who lives on a farm, Ferdinand\'s peaceful existence comes crashing down when the authorities return him to his former captors. With help from a wisecracking goat and three hedgehogs, the giant but gentle bovine must find a way to break free before he squares off against El Primero, the famous bullfighter who never loses.', 'p'),
 (13, 'images/13.jpg', 'Wonder', 'videos/13.mp4', 'family', '8.1/10', 'Based on the New York Times bestseller, WONDER tells the incredibly inspiring and heartwarming story of August Pullman, a boy with facial differences who enters fifth grade, attending a mainstream elementary school for the first time.', 'pnk'),
-(14, 'images/14.jpg', 'Diary of a Wimpy Kid: The Long Haul', 'videos/14.mp4', 'family', '4.3/10', 'Young Greg Heffley is looking forward to a long summer of just hanging out, but his mother throws a monkey wrench into his plans when she forces the entire family to take a road trip for a relative\'s birthday celebration. His eyes soon light up after he realizes that the excursion is his ticket to a gaming convention to meet YouTube sensation Mac Digby. Greg\'s imagination then kicks into overdrive as he sneakily hatches a scheme to attend the expo and gain some much-deserved fame.', 'pnk'),
+(14, 'images/14.jpg', 'Diary of a Wimpy Kid', 'videos/14.mp4', 'family', '4.3/10', 'Young Greg Heffley is looking forward to a long summer of just hanging out, but his mother throws a monkey wrench into his plans when she forces the entire family to take a road trip for a relative\'s birthday celebration. His eyes soon light up after he realizes that the excursion is his ticket to a gaming convention to meet YouTube sensation Mac Digby. Greg\'s imagination then kicks into overdrive as he sneakily hatches a scheme to attend the expo and gain some much-deserved fame.', 'pnk'),
 (15, 'images/15.jpg', 'Goodbye Christopher Robin', 'videos/15.mp4', 'family', '7.1/10', 'After leaving London for the English countryside, writer A.A. Milne starts to spin fanciful yarns about his son\'s growing collection of stuffed animals. These stories form the basis for \"Winnie-the-Pooh\" and \"The House at Pooh Corner,\" published respectively in 1926 and 1928. Milne and his family soon become swept up in the instant success of the books, while the enchanting tales bring hope and comfort to the rest of postwar England.', 'pnk'),
 (16, 'images/16.jpg', 'Call Me by Your Name', 'videos/16.mp4', 'family', '8.1/10', 'It\'s the summer of 1983, and precocious 17-year-old Elio Perlman is spending the days with his family at their 17th-century villa in Lombardy, Italy. He soon meets Oliver, a handsome doctoral student who\'s working as an intern for Elio\'s father. Amid the sun-drenched splendor of their surroundings, Elio and Oliver discover the heady beauty of awakening desire over the course of a summer that will alter their lives forever.', 'p'),
 (17, 'images/17.jpg', 'Ready Player One', 'videos/17.mp4', 'Sci-fi', '8/10', 'From filmmaker Steven Spielberg comes the science fiction action adventure “Ready Player One,” based on Ernest Cline’s bestseller of the same name, which has become a worldwide phenomenon. The film is set in 2045, with the world on the brink of chaos and collapse. But the people have found salvation in the OASIS, an expansive virtual reality universe created by the brilliant and eccentric James Halliday (Mark Rylance). ', 'pnk'),
@@ -63,7 +82,77 @@ INSERT INTO `tbl_movies` (`movie_id`, `movie_cover`, `movie_title`, `movie_trail
 (25, 'images/25.jpg', 'It', 'videos/25.mp4', 'Thriller', '7.5/10', 'Seven young outcasts in Derry, Maine, are about to face their worst nightmare -- an ancient, shape-shifting evil that emerges from the sewer every 27 years to prey on the town\'s children. Banding together over the course of one horrifying summer, the friends must overcome their own personal fears to battle the murderous, bloodthirsty clown known as Pennywise.', 'p'),
 (26, 'images/26.jpg', 'Red Sparrow', 'videos/26.mp4', 'Thriller', '6.8/10', 'Prima ballerina Dominika Egorova faces a bleak and uncertain future after she suffers an injury that ends her career. She soon turns to Sparrow School, a secret intelligence service that trains exceptional young people to use their minds and bodies as weapons. Egorova emerges as the most dangerous Sparrow after completing the sadistic training process. As she comes to terms with her new abilities, Dominika meets a CIA agent who tries to convince her that he is the only person she can trust.', ''),
 (27, 'images/27.jpg', 'A Quiet Place', 'videos/27.mp4', 'Thriller', '8.4/10', 'If they hear you, they hunt you.', ''),
-(28, 'images/28.jpg', 'Get Out', 'videos/28.mp4', 'Thriller', '7.7/10', 'Now that Chris (Daniel Kaluuya) and his girlfriend, Rose (Allison Williams), have reached the meet-the-parents milestone of dating, she invites him for a weekend getaway upstate with Missy and Dean. At first, Chris reads the family\'s overly accommodating behavior as nervous attempts to deal with their daughter\'s interracial relationship, but as the weekend progresses, a series of increasingly disturbing discoveries lead him to a truth that he never could have imagined.', '');
+(28, 'images/28.jpg', 'Get Out', 'videos/28.mp4', 'Thriller', '7.7/10', 'Now that Chris (Daniel Kaluuya) and his girlfriend, Rose (Allison Williams), have reached the meet-the-parents milestone of dating, she invites him for a weekend getaway upstate with Missy and Dean. At first, Chris reads the family\'s overly accommodating behavior as nervous attempts to deal with their daughter\'s interracial relationship, but as the weekend progresses, a series of increasingly disturbing discoveries lead him to a truth that he never could have imagined.', ''),
+(31, 'pexels-photo-220166.jpeg', '77', '77', '77', '77', '77', '77');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_movies_reviews`
+--
+
+CREATE TABLE `tbl_movies_reviews` (
+  `mov_rev_id` mediumint(10) NOT NULL,
+  `movie_id` mediumint(10) NOT NULL,
+  `review_id` mediumint(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `tbl_movies_reviews`
+--
+
+INSERT INTO `tbl_movies_reviews` (`mov_rev_id`, `movie_id`, `review_id`) VALUES
+(1, 1, 2),
+(2, 5, 14),
+(3, 21, 15),
+(4, 1, 16),
+(5, 1, 17),
+(6, 1, 18),
+(7, 1, 19),
+(8, 1, 20),
+(9, 1, 21),
+(10, 1, 22),
+(11, 4, 21),
+(12, 2, 22);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_reviews`
+--
+
+CREATE TABLE `tbl_reviews` (
+  `review_id` int(11) NOT NULL,
+  `review_reviewer` varchar(20) NOT NULL,
+  `review_rating` varchar(11) NOT NULL,
+  `review_content` varchar(1000) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `tbl_reviews`
+--
+
+INSERT INTO `tbl_reviews` (`review_id`, `review_reviewer`, `review_rating`, `review_content`) VALUES
+(1, '11', '1', '111'),
+(2, '111', '10', 'awesome'),
+(3, 'qqq', '10', 'Great'),
+(4, 'qqq', '10', 'aaa'),
+(5, 'aaa', '10', 'aaa'),
+(6, 'qqq', '10', 'rrr'),
+(7, 'aaa', '10', 'www'),
+(8, 'aaa', '10', 'www'),
+(9, '333', '10', '111'),
+(10, '333', '10', '111'),
+(11, 'aaa', '7', 'www'),
+(12, 'aaa', '7', 'www'),
+(13, 'cc', '10', 'ccc'),
+(14, 'xasxa', '10', 'xasxa'),
+(15, 'aaa', '10', 'great movie'),
+(16, 'qqq', '10', 'love it!'),
+(18, 'sss', '10', 'qswqw'),
+(20, 'sqwsq', '10', 'sqqwsqws'),
+(21, 'qq', '10', 'wewdwe'),
+(22, 'ddd', '10', '棒棒哒');
 
 -- --------------------------------------------------------
 
@@ -83,14 +172,40 @@ CREATE TABLE `tbl_user` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
+-- Dumping data for table `tbl_user`
+--
+
+INSERT INTO `tbl_user` (`user_id`, `user_fname`, `user_name`, `user_pass`, `user_email`, `user_date`, `user_ip`, `user_level`) VALUES
+(1, 'aaa', 'aaa', 'aaa', 'sss', '2018-04-07 21:50:27', '::1', ''),
+(2, 'jay', 'jay', 'jay', 'jay@jay.com', '2018-04-07 21:50:53', '::1', 'no');
+
+--
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `tbl_attempts`
+--
+ALTER TABLE `tbl_attempts`
+  ADD PRIMARY KEY (`att_id`);
 
 --
 -- Indexes for table `tbl_movies`
 --
 ALTER TABLE `tbl_movies`
   ADD PRIMARY KEY (`movie_id`);
+
+--
+-- Indexes for table `tbl_movies_reviews`
+--
+ALTER TABLE `tbl_movies_reviews`
+  ADD PRIMARY KEY (`mov_rev_id`);
+
+--
+-- Indexes for table `tbl_reviews`
+--
+ALTER TABLE `tbl_reviews`
+  ADD PRIMARY KEY (`review_id`);
 
 --
 -- Indexes for table `tbl_user`
@@ -103,12 +218,27 @@ ALTER TABLE `tbl_user`
 --
 
 --
+-- AUTO_INCREMENT for table `tbl_attempts`
+--
+ALTER TABLE `tbl_attempts`
+  MODIFY `att_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
 -- AUTO_INCREMENT for table `tbl_movies`
 --
 ALTER TABLE `tbl_movies`
-  MODIFY `movie_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
+  MODIFY `movie_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
+--
+-- AUTO_INCREMENT for table `tbl_movies_reviews`
+--
+ALTER TABLE `tbl_movies_reviews`
+  MODIFY `mov_rev_id` mediumint(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+--
+-- AUTO_INCREMENT for table `tbl_reviews`
+--
+ALTER TABLE `tbl_reviews`
+  MODIFY `review_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 --
 -- AUTO_INCREMENT for table `tbl_user`
 --
 ALTER TABLE `tbl_user`
-  MODIFY `user_id` mediumint(9) NOT NULL AUTO_INCREMENT;
+  MODIFY `user_id` mediumint(9) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
