@@ -44,5 +44,6 @@
 		</select><br><br>
 		<input type="submit" name="submit" value="Create User">
 	</form>
+	<a href="admin_index.php">Back</a>
 </body>
 </html>

@@ -10,12 +10,15 @@
 <head>
 <meta charset="UTF-8">
 <title>Movie Delete</title>
-<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="../css/reset.css">
+<link rel="stylesheet" href="../css/admin.css">
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700|Merriweather:300,400,700" rel="stylesheet">
 </head>
 <body>
 	<a href="admin_index.php" class="homeButton">Home</a>
 	<div id="deleteDiv">
 	<h2>Delete a Movie.</h2>
+	<a href="admin_index.php">Back</a>
 	<?php
 		while($row = mysqli_fetch_array($movies)){
 			echo "<div class=\"delItemDiv\">
