@@ -25,7 +25,9 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Details</title>
+<title>Movie Details</title>
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 

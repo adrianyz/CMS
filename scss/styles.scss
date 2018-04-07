@@ -1,0 +1,128 @@
+$primfont: 'Lato', sans-serif;
+$secfont: 'Merriweather', serif;
+$primcolor: white;
+$seccolor: black;
+$thirdcolor: orangered;
+
+body{
+    width:100vw;
+    height:100vh;
+    display:grid;
+    grid-template-columns: 100px repeat(10, 1fr) 100px;
+    grid-template-rows: 150px auto 80px;
+    background-color: $primcolor;
+}
+
+.headerNav{
+    grid-column: 2/12;
+    grid-row: 1/2;
+
+    h2{
+        font-family: $primfont;
+        font-size: 5em;
+        font-weight:900;
+        text-align: center;
+        line-height:1.5em;
+        color:$seccolor;
+    }
+
+    ul{
+        list-style: none;
+        margin:0 auto;
+        width:700px;
+        
+        li{
+            display: inline-block;
+
+            a{
+                text-decoration: none;
+                font-family: $secfont;
+                font-weight:300;
+                font-size:1em;
+                margin:0 10px;
+                color:$seccolor;
+                transition: all .3s ease-in-out;
+
+                &:hover{
+                    color:$thirdcolor;
+                }
+            }
+        }
+    }
+}
+
+.movies{
+    grid-column: 2/12;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    overflow:scroll;
+}
+
+.singleMovie{
+    width: 350px;
+    margin-bottom: 20px;
+
+    .imgWrapper{
+        width: 350px;
+        height: 480px;
+        overflow: hidden;
+    }
+    
+    img{
+        width:100%;
+        transition: all .4s ease-in-out;
+        transform: scale(1);
+        -webkit-filter: grayscale(100%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+        filter: grayscale(100%); /* FF 35+ */
+        
+        &:hover {
+            transform: scale(1.05);
+            -webkit-filter: grayscale(0%); /* Ch 23+, Saf 6.0+, BB 10.0+ */
+            filter: grayscale(0%); /* FF 35+ */
+          }
+    }
+
+    h2{
+        font-family: $primfont;
+        font-size:1.5em;
+        font-weight:700;
+        text-align: center;
+        line-height: 2.5em;
+    }
+
+    p{
+        font-family: $secfont;
+        font-size: 0.8em;
+        text-transform: capitalize;
+        text-align: center;
+        line-height: 1.5em;
+    }
+
+    a{
+        text-decoration: none;
+        font-family: $secfont;
+        font-weight:300;
+        font-size:0.8em;
+        margin:0 auto;
+        color:$seccolor;
+        transition: all .3s ease-in-out;
+        line-height: 1.5em;
+        &:hover{
+            color:$thirdcolor;
+        }
+    }
+}
+
+footer{
+    grid-column: 2/12;
+    grid-row: 3/4;
+
+    h2{
+        color:$seccolor;
+        font-family: $secfont;
+        font-size:1em;
+        line-height: 3em;
+        text-align: center;
+    }
+}
