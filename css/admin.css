@@ -1,7 +1,70 @@
 body {
   background-color: white; }
 
-.loginForm, .greeting, .userCreateForm {
+a {
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  color: black;
+  font-family: "Lato", sans-serif;
+  font-size: 1em;
+  margin-top: 50px;
+  -webkit-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out; }
+  a:hover {
+    color: orangered; }
+
+.loginForm {
+  width: 600px;
+  margin: auto;
+  margin-top: 250px;
+  position: relative;
+  height: 350px;
+  border: 2px solid orangered;
+  text-align: center;
+  padding-top: 50px; }
+  .loginForm label {
+    color: black;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 3rem;
+    width: 80px;
+    margin-right: 20px; }
+  .loginForm input {
+    border: none;
+    background-color: transparent;
+    border: 2px solid orangered;
+    width: 300px;
+    line-height: 2.5rem;
+    margin-top: 5px;
+    color: black;
+    font-family: "Merriweather", serif;
+    font-size: 1rem;
+    font-weight: 300; }
+  .loginForm .button {
+    position: absolute;
+    bottom: 40px;
+    left: 225px;
+    height: 3rem;
+    width: 150px;
+    color: black;
+    font-family: "Lato", sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+    border: 2px solid orangered;
+    cursor: pointer;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out; }
+    .loginForm .button:hover {
+      color: white;
+      border: 2px solid orangered;
+      background-color: orangered; }
+
+.greeting {
   width: 600px;
   margin: auto;
   margin-top: 300px;
@@ -10,81 +73,252 @@ body {
   border: 2px solid orangered;
   text-align: center;
   padding-top: 50px; }
+  .greeting p {
+    color: black;
+    font-family: "Lato", sans-serif;
+    font-size: 1.5rem;
+    line-height: 40px; }
+  .greeting h2 {
+    font-family: "Merriweather", serif;
+    font-size: 2rem;
+    font-weight: 300;
+    color: orangered;
+    margin: 30px; }
+  .greeting .someBtns {
+    width: 600px;
+    display: grid;
+    grid-template-columns: 20px repeat(5 1fr) 20px;
+    grid-template-rows: repeat(3 1fr); }
+  .greeting ul {
+    list-style: none;
+    margin: 0 auto;
+    width: 600px; }
+  .greeting li {
+    display: inline-block; }
+  .greeting a {
+    text-decoration: none;
+    font-family: "Merriweather", serif;
+    font-weight: 300;
+    font-size: 1em;
+    margin: 0 10px;
+    line-height: 2em;
+    display: inline-block;
+    color: black;
+    width: 120px;
+    text-align: center;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    cursor: pointer; }
+    .greeting a:hover {
+      color: orangered; }
 
-.loginForm label {
-  color: black;
+h2 {
   font-family: "Merriweather", serif;
-  font-weight: 300;
-  font-size: 1rem;
-  line-height: 3rem;
-  width: 80px;
-  margin-right: 20px; }
-
-.loginForm input {
-  border: none;
-  background-color: transparent;
-  border: 2px solid orangered;
-  width: 300px;
-  line-height: 2.5rem;
-  margin-top: 5px;
-  color: black;
-  font-family: "Merriweather", serif;
-  font-size: 1rem;
-  font-weight: 300; }
-
-.loginForm .button {
-  position: absolute;
-  bottom: 40px;
-  left: 225px;
-  height: 3rem;
-  width: 150px;
-  color: black;
-  font-family: "Merriweather", serif;
-  font-size: 1rem;
-  font-weight: 300;
-  border: 2px solid orangered; }
-
-.greeting p {
-  color: black;
-  font-family: "Lato", sans-serif;
-  font-size: 1.5rem;
-  line-height: 40px; }
-
-.greeting h2 {
-  font-family: "Merriweather", serif;
-  font-size: 2rem;
-  font-weight: 300;
-  color: orangered;
-  margin: 30px; }
-
-.greeting .someBtns {
-  width: 600px;
-  display: grid;
-  grid-template-columns: 20px repeat(5 1fr) 20px;
-  grid-template-rows: repeat(3 1fr); }
-
-.greeting ul {
-  list-style: none;
-  margin: 0 auto;
-  width: 600px; }
-
-.greeting li {
-  display: inline-block; }
-
-.greeting a {
-  text-decoration: none;
-  font-family: "Merriweather", serif;
-  font-weight: 300;
-  font-size: 1em;
-  margin: 0 10px;
-  line-height: 2em;
-  display: inline-block;
-  color: black;
-  width: 120px;
   text-align: center;
-  -webkit-transition: all .3s ease-in-out;
-  -o-transition: all .3s ease-in-out;
-  transition: all .3s ease-in-out;
-  cursor: pointer; }
-  .greeting a:hover {
-    color: orangered; }
+  font-size: 2.5em;
+  margin-top: 100px; }
+
+.userCreateForm {
+  width: 600px;
+  margin: auto;
+  margin-top: 100px;
+  position: relative;
+  height: 350px;
+  border: 2px solid orangered;
+  text-align: center;
+  padding-top: 50px; }
+  .userCreateForm label {
+    font-family: "Lato", sans-serif;
+    font-size: 1.3em;
+    line-height: 1.8em; }
+  .userCreateForm input {
+    font-size: 1.3em;
+    padding: 2px;
+    border: 1px solid orangered; }
+  .userCreateForm select {
+    border: 1px solid orangered;
+    padding: 8px; }
+  .userCreateForm select:focus {
+    outline: none; }
+  .userCreateForm .submitBtn {
+    background: transparent;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    font-size: 1em;
+    padding: 8px;
+    color: black; }
+    .userCreateForm .submitBtn:hover {
+      background: orangered;
+      color: white; }
+
+.userEditForm {
+  width: 600px;
+  margin: auto;
+  margin-top: 100px;
+  position: relative;
+  height: 350px;
+  border: 2px solid orangered;
+  text-align: center;
+  padding-top: 50px; }
+  .userEditForm label {
+    font-family: "Lato", sans-serif;
+    font-size: 1.3em;
+    line-height: 1.8em; }
+  .userEditForm input {
+    font-size: 1.3em;
+    padding: 2px;
+    border: 1px solid orangered; }
+  .userEditForm select {
+    border: 1px solid orangered;
+    padding: 8px; }
+  .userEditForm .submitBtn {
+    background: transparent;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    font-size: 1em;
+    padding: 8px;
+    color: black; }
+    .userEditForm .submitBtn:hover {
+      background: orangered;
+      color: white; }
+
+.deleteU {
+  height: 50vh;
+  display: grid;
+  grid-template-columns: repeat(4 1fr);
+  grid-template-rows: repeat(4 1fr);
+  margin: 20px 100px;
+  display: block;
+  border: 1px solid orangered;
+  padding: 0 50px; }
+  .deleteU .users {
+    display: inline; }
+  .deleteU p {
+    display: inline-block; }
+  .deleteU a {
+    display: inline-block;
+    margin-left: 30px;
+    padding: 5px;
+    border-bottom: 1px solid orangered; }
+
+.addMovieForm {
+  width: 600px;
+  margin: auto;
+  margin-top: 100px;
+  position: relative;
+  height: 450px;
+  border: 2px solid orangered;
+  text-align: center;
+  padding-top: 50px; }
+  .addMovieForm label {
+    font-family: "Lato", sans-serif;
+    font-size: 1.3em;
+    line-height: 1.8em; }
+  .addMovieForm input {
+    font-size: 1.3em;
+    padding: 2px;
+    border: 1px solid orangered; }
+  .addMovieForm select {
+    border: 1px solid orangered;
+    padding: 8px; }
+  .addMovieForm .submitBtn {
+    background: transparent;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    font-size: 1em;
+    padding: 8px;
+    color: black; }
+    .addMovieForm .submitBtn:hover {
+      background: orangered;
+      color: white; }
+
+#selEditDiv {
+  display: grid;
+  grid-template-rows: 10vh 70vh 20vh;
+  overflow: hidden;
+  padding-top: 50px; }
+  #selEditDiv h2 {
+    grid-row: 1/2;
+    margin: 0; }
+  #selEditDiv .movieList {
+    width: 1300px;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
+    overflow: scroll;
+    margin: 0 200px;
+    border: 2px solid orangered; }
+  #selEditDiv .singleMovie {
+    width: 300px; }
+    #selEditDiv .singleMovie p {
+      display: inline; }
+    #selEditDiv .singleMovie a {
+      display: inline; }
+
+.editMovieDiv h2 {
+  margin-top: 80px; }
+
+.editMovieForm {
+  width: 600px;
+  margin: auto;
+  margin-top: 50px;
+  position: relative;
+  height: 560px;
+  border: 2px solid orangered;
+  text-align: center;
+  padding: 30px 0; }
+  .editMovieForm label {
+    font-family: "Lato", sans-serif;
+    font-size: 1.3em;
+    line-height: 1.8em; }
+  .editMovieForm input {
+    font-size: 1.3em;
+    padding: 2px;
+    border: 1px solid orangered; }
+  .editMovieForm select {
+    border: 1px solid orangered;
+    padding: 8px; }
+  .editMovieForm .submitBtn {
+    background: transparent;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    font-size: 1em;
+    padding: 8px;
+    color: black;
+    margin-top: 30px; }
+    .editMovieForm .submitBtn:hover {
+      background: orangered;
+      color: white; }
+
+#deleteDiv {
+  display: grid;
+  grid-template-rows: 10vh 70vh 20vh;
+  overflow: hidden;
+  padding-top: 50px; }
+  #deleteDiv h2 {
+    grid-row: 1/2;
+    margin: 0; }
+  #deleteDiv .deletelist {
+    width: 1200px;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
+    overflow: scroll;
+    margin: 0 200px;
+    border: 2px solid orangered;
+    padding: 0 50px; }
+  #deleteDiv .delItemDiv {
+    width: 300px;
+    margin: 20px; }
+    #deleteDiv .delItemDiv p {
+      display: inline;
+      font-family: "Lato", sans-serif; }
+    #deleteDiv .delItemDiv a {
+      display: inline;
+      font-family: "Lato", sans-serif;
+      color: orangered; }

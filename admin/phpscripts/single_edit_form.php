@@ -27,7 +27,7 @@
         }
       }
     }
-    echo "<input id=\"submitEdit\" type=\"submit\" name=\"submit\" value=\"Save Content\">";
+    echo "<input class=\"submitBtn\" type=\"submit\" name=\"submit\" value=\"Save Content\">";
     echo "</form>";
   }
 

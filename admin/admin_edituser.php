@@ -30,7 +30,7 @@
 <body>
 	<h2>Edit User</h2>
 	<?php if(!empty($message)){echo $message;} ?>
-	<form action="admin_edituser.php" method="post">
+	<form action="admin_edituser.php" method="post" class="userEditForm">
 		<label>First Name:</label>
 		<input type="text" name="fname" value="<?php echo $info['user_fname'];  ?>"><br><br>
 		<label>Username:</label>
@@ -39,7 +39,7 @@
 		<input type="text" name="password" value="<?php echo $info['user_pass'];  ?>"><br><br>
 		<label>Email:</label>
 		<input type="text" name="email" value="<?php echo $info['user_email'];  ?>"><br><br>
-		<input type="submit" name="submit" value="Edit Account">
+		<input type="submit" name="submit" value="Edit Account" class="submitBtn">
 	</form>
 	<a href="admin_index.php">Back</a>
 </body>

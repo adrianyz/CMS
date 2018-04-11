@@ -24,7 +24,7 @@
 </head>
 <body>
 	<?php if(!empty($message)){ echo $message;} ?>
-	<form action="admin_addmovie.php" method="post" enctype="multipart/form-data">
+	<form action="admin_addmovie.php" method="post" enctype="multipart/form-data" class="addMovieForm">
 		<label>Cover Image:</label>
 		<input type="file" name="cover" value="">
 		<br><br>
@@ -46,7 +46,7 @@
 		<label>Movie Grade:</label>
 		<input type="text" name="grade" value="">
 		<br><br>
-		<input type="submit" name="submit" value="Add Movie">
+		<input type="submit" name="submit" value="Add Movie" class="submitBtn">
 	</form>
 	<a href="admin_index.php">Back</a>
 </body>

@@ -42,7 +42,7 @@
 			<option value="2">Web Admin</option>
 			<option value="1">Web Master</option>
 		</select><br><br>
-		<input type="submit" name="submit" value="Create User">
+		<input type="submit" name="submit" value="Create User" class="submitBtn">
 	</form>
 	<a href="admin_index.php">Back</a>
 </body>
