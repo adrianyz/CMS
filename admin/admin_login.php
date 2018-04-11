@@ -31,7 +31,7 @@
   <title>Admin Login</title>
 </head>
 <body>
-
+  
   <form action="admin_login.php" method="post" class="loginForm">
     <label>Username:</label>
     <input type="text" name="username" value=""></input>
@@ -42,7 +42,7 @@
     <div class="eroMsg"><?php if(!empty($message)){ echo $message;} ?></div>
     <br>
     <input type="submit" name="submit" value="Ready to go!" class="button"></input>
-
   </form>
+  <a href="../index.php" class="bcktoSite">Back to the Movie Site</a>
 </body>
 </html>

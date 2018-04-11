@@ -11,16 +11,17 @@
 <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Merriweather:300,400,700" rel="stylesheet">
 </head>
 <body>
-<a class="homeBtn" href="admin_index.php">Back</a>
 <div class="editMovieDiv">
 	<h2>Edit Movie!</h2>
-	<a href="admin_index.php">Back</a>
+	<div>
 	<?php
 		$tbl = "tbl_movies";
 		$col = "movie_id";
 		$id = $_GET['id'];
 		echo single_edit($tbl, $col, $id);
 	?>
+	</div>
+	<a href="admin_index.php">Back</a>
 </div>
 
 </body>

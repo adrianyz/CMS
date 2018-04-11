@@ -58,6 +58,7 @@ if(mysqli_num_rows($timeToPass)){
       <li><a href="admin_selectEdit.php">Edit Movie</a></li>
       <li><a href="admin_deleteMovie.php">Delete Movie</a></li><br>
       <li><a href="phpscripts/caller.php?caller_id=logout">Sign Out</a></li>
+      <li><a href="../index.php" class="bcktoSite">Movie Site</a></li>
     </ul>
 </div>
 

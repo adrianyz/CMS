@@ -15,18 +15,19 @@
 <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Merriweather:300,400,700" rel="stylesheet">
 </head>
 <body>
-	<a href="admin_index.php" class="homeButton">Home</a>
 	<div id="deleteDiv">
-	<h2>Delete a Movie.</h2>
-	<a href="admin_index.php">Back</a>
-	<?php
-		while($row = mysqli_fetch_array($movies)){
-			echo "<div class=\"delItemDiv\">
-			<p class=\"delName\">{$row['movie_title']}</p>
-			<a class=\"delButton\" href=\"phpscripts/caller.php?caller_id=deleteMov&id={$row['movie_id']}\">Delete</a>
-			</div> ";
-		}
-	 ?>
-</div>
+		<h2>Delete a Movie.</h2>
+		<div class="deletelist">
+			<?php
+				while($row = mysqli_fetch_array($movies)){
+					echo "<div class=\"delItemDiv\">
+					<p class=\"delName\">{$row['movie_title']}</p>
+					<a class=\"delButton\" href=\"phpscripts/caller.php?caller_id=deleteMov&id={$row['movie_id']}\">Delete</a>
+					</div> ";
+				}
+			?>
+		</div>
+		<a href="admin_index.php">Back</a>
+	</div>
 </body>
 </html>

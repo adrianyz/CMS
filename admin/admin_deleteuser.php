@@ -14,12 +14,14 @@
 <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Merriweather:300,400,700" rel="stylesheet">
 </head>
 <body>
-	<h2>Time to destroy some lives...</h2>
+	<h2>Say goodbye to...</h2>
+	<div class="deleteU">
 	<?php
 		while($row = mysqli_fetch_array($users)){
-			echo "{$row['user_fname']} <a href=\"phpscripts/caller.php?caller_id=delete&id={$row['user_id']}\">Fired</a><br>";
+			echo "<div class=\"users\"><p>{$row['user_fname']}</p> <a href=\"phpscripts/caller.php?caller_id=delete&id={$row['user_id']}\">See ya!</a><br> </div>";
 		}
 	?>
+	</div>
 	<a href="admin_index.php">Back</a>
 </body>
 </html>
